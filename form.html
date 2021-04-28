@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script srce="script.js"></script>
+    <link rel="stylesheet" href="design.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <div action="#" class="form">
+        <h1>You are invited to attend Sam and Setso engagement party</h1>
+    <div id="input">
+        <input type="text" id="lname" placeholder="LastName" required>
+        <input type="text" id="fname" placeholder="FirstName" required>
+        <input type="number" name="phone_number" id="phone_number" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="Contact" required>
+    </div>
+    
+    <div id="checkboxes">
+        <p>Choose one</p>
+        <input type="radio" id="yes" name="choose" value="Yes">
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="choose" value="No">
+        <label for="no">No</label><br>
+        <input type="radio" id="maybe" name="choose" value="Maybe">
+        <label for="maybe">Maybe</label>
+
+    </div>
+
+    <br>
+
+    <label for="select">Meal Selection</label>
+    <br>
+    <br>
+
+    <select id="meal" name="Meal Selection" value="">
+        <option value="chicken">Chicken + Rice</option>
+        <option value="pap">Chicken + Pap</option>
+        <option value="stew">Stew + Pap</option>
+        <option value="rice">Stew + Rice</option>
+      </select>
+
+    <div id="guests">
+        <p>How many guests are you bringing</p>
+
+        <input type="number" id="number" placeholder="Number of guests" min="1" max="10">
+    </div>
+<br>
+
+<input type="button" id="subBtn" onclick="submit(event)" value="Submit">
+
+    </div>
+
+    
+</body>
+</html>
